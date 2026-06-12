@@ -156,11 +156,17 @@ export default function App() {
     const temperatures = normalized.map((point) => point.temperature);
     const minTemperature = Math.min(...temperatures);
     const maxTemperature = Math.max(...temperatures);
+    const firstMinIndex = normalized.findIndex(
+      (point) => point.temperature === minTemperature,
+    );
+    const firstMaxIndex = normalized.findIndex(
+      (point) => point.temperature === maxTemperature,
+    );
 
-    return normalized.map((point) => ({
+    return normalized.map((point, index) => ({
       ...point,
-      isMin: point.temperature === minTemperature,
-      isMax: point.temperature === maxTemperature,
+      isMin: index === firstMinIndex,
+      isMax: index === firstMaxIndex,
     }));
   }, [points]);
 
