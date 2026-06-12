@@ -1,0 +1,31 @@
+{
+  "name": "getwet",
+  "version": "1.0.0",
+  "description": "My super simple weather forecast",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "source": "index.html",
+  "scripts": {
+    "dev": "parcel index.html",
+    "clean": "rm -rf dist/*",
+    "build": "npm run clean && parcel build index.html --public-url ./",
+    "preview": "parcel serve dist/index.html"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "2.8.2",
+    "@emotion/react": "^11.13.5",
+    "@emotion/styled": "^11.13.5",
+    "framer-motion": "^11.15.0",
+    "lucide-react": "^0.468.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "recharts": "^3.8.1"
+  },
+  "devDependencies": {
+    "@parcel/packager-raw-url": "^2.16.4",
+    "@parcel/transformer-webmanifest": "^2.16.4",
+    "parcel": "^2.16.4",
+    "process": "^0.11.10"
+  }
+}

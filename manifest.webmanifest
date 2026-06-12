@@ -1,0 +1,18 @@
+{
+  "name": "Get Wet",
+  "short_name": "Get Wet",
+  "description": "A compact personal precipitation forecast.",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#08090d",
+  "theme_color": "#08090d",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "./src/assets/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

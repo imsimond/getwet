@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background: #08090d;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: geometricPrecision;
+}
+
+button,
+svg,
+.recharts-wrapper {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.recharts-tooltip-wrapper {
+  outline: none;
+}
