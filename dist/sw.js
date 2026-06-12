@@ -1,0 +1,2 @@
+const CACHE_NAME="getwet-v1",APP_SHELL=[".","./index.html"];self.addEventListener("install",e=>{e.waitUntil(caches.open(CACHE_NAME).then(e=>e.addAll(APP_SHELL))),self.skipWaiting()}),self.addEventListener("activate",e=>{e.waitUntil(caches.keys().then(e=>Promise.all(e.filter(e=>e!==CACHE_NAME).map(e=>caches.delete(e))))),self.clients.claim()}),self.addEventListener("fetch",e=>{"GET"===e.request.method&&e.respondWith(fetch(e.request).catch(()=>caches.match(e.request)))});
+//# sourceMappingURL=sw.js.map
